@@ -1,26 +1,27 @@
-/*Exercise 3 - Repetition
+6 /*Exercise 3 - Repetition
 
-Write a C program to calculate the sum of the numbers from 1 to n.
-Where n is a keyboard input.
+ Write a C program to calculate the sum of the numbers from 1 to n.
+ Where n is a keyboard input.
 
-e.g.
+ e.g.
 
-n -> 100
-sum = 1+2+3+....+ 99+100 = 5050
+ n -> 100
+ sum = 1+2+3+....+ 99+100 = 5050
 
-n -> 1-
-sum = 1+2+3+...+10 = 55 */
+ n -> 1-
+ sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
-int main() {
-  int n,sum,x;
+int main()
+{
+  int n, sum, x;
   printf("Enter the number: ");
-  scanf("%d",&n);
-   for(x=1;x<n;n++)
-   {
-     sum=x+x;
-   }
-  printf("The sum is: %d",sum);
+  scanf("%d", &n);
+  
+  for (x = 0; x < n; x++) 
+  {
+    sum += x;
+  }
+  printf("The sum is: %d", sum);
   return 0;
 }
-

@@ -18,3 +18,30 @@ int main() {
    return 0;
 }
 
+int minimum(no1,no2)
+{
+  if(no1>no2)
+  {
+    return no2;
+  }
+  else {
+    return no1;
+  }
+}
+
+int maximum(no1, no2)
+{
+  if(no1>no2)
+  {
+    return no1;
+  }
+  else {
+    return no2;
+  }
+}
+
+int multiply(no1,no2)
+{
+  return no1*no2;
+}
+
